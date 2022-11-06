@@ -19,7 +19,7 @@ class PostRepository
        $request->setFetchMode(PDO::FETCH_CLASS, 'App\Model\Post');
        $posts = $request->fetchAll();
  
-  
+       return $posts;
 
       }
 
