@@ -11,6 +11,7 @@ class PostRepository
       {
       
      $dbh = new PDO('mysql:host=localhost;dbname=blog', 'root', '');
+      $test = FALSE;
       
        $request = $dbh->query('SELECT *  FROM post');
 
@@ -18,7 +19,7 @@ class PostRepository
        $request->setFetchMode(PDO::FETCH_CLASS, 'App\Model\Post');
        $posts = $request->fetchAll();
  
-       return $posts;
+  
 
       }
 
