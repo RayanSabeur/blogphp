@@ -1,0 +1,13 @@
+{
+    "name": "camile/blog",
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "authors": [{
+        "name": "CamileGhastine",
+        "email": "camileghastine@hotmail.com"
+    }],
+    "require": {}
+}
